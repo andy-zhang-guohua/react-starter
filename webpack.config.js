@@ -1,12 +1,14 @@
-module.exports = {
-    entry: './main.js', // 入口文件路径
+const path = require('path');
+const config = {
+    entry: './src/main.js', // 入口文件路径
     output: {
-        path: '/js_ wks/react-starter',
-        filename: 'index.js'
+        path: path.resolve(__dirname, 'dist'),
+        filename: 'bundle.js'
     },
+    mode: 'development',
     devServer: {
         inline: true,
-        port: 3333
+        port: 4000
     },
     module: {
         rules: [
@@ -19,5 +21,7 @@ module.exports = {
                 }
             }
         ]
-    }
-}
+    },
+};
+
+module.exports = config;
