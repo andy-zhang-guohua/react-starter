@@ -1,3 +1,11 @@
+# 2018-03-26
+重新组织目录结构 :
+
+    1. src 源代码目录 (手工创建)
+    2. dist 目标代码目录 (手工创建)
+    3. dist/index.html 浏览器端应用入口html文件 (手工创建)
+    4. dist/bundle.js (npx webpack 自动生成)
+
 # 2018-03-25
 1. 基于webpack开发react web应用的基础代码框
  - 主要目的 
@@ -5,3 +13,8 @@
     - 练习 webpack 使用
 2. 编译 : npx webpack
 3. 调试运行 : npm start
+
+参考文档 :
+
+1. https://webpack.js.org/guides/getting-started/#basic-setup
+2. https://www.cnblogs.com/zamhown/p/6428050.html
