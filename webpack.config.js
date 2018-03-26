@@ -1,6 +1,10 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 const config = {
-    entry: './src/main.js',
+    entry: {
+        main: './src/main.js',
+    },
     // 1. 应用程序执行入口文件路径
     // 2. webpack打包入口文件路径
     output: {// 用于控制webpack如何输出打包结果的配置项
@@ -8,13 +12,13 @@ const config = {
         // 所有输出文件的目标输出目录，必须是绝对路径
         // 这里的例子使用了node的模块path,用来将目标输出目录
         // 设置为当前项目根目录下的子目录dist
-        filename: 'bundle.js'
+        filename: '[name].bundle.js'
         // 目标js代码文件的文件名模板，注意，是文件名模板，可以使用占位符
         // 例子 :
         // 1. bundle.js, 表示入口源main.js文件打包输出为bundle.js
         // 2. [name].js, 表示入口源main.js文件打包输出为main.js (.js之前的部分复制了源文件的文件名)
     },
-    mode: 'development',
+    mode: 'production',
     devServer: {
         inline: true,
         port: 4000,
@@ -31,6 +35,37 @@ const config = {
                 query: {
                     presets: ['react', 'latest']
                 }
+            },
+            {
+                test: /\.css$/,
+                use: [
+                    'style-loader',
+                    'css-loader'
+                ]
+            },
+            {
+                test: /\.(png|svg|jpg|gif)$/,
+                use: [
+                    'file-loader'
+                ]
+            },
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/,
+                use: [
+                    'file-loader'
+                ]
+            },
+            {
+                test: /\.(csv|tsv)$/,
+                use: [
+                    'csv-loader'
+                ]
+            },
+            {
+                test: /\.xml$/,
+                use: [
+                    'xml-loader'
+                ]
             }
         ]
     },

@@ -1,0 +1,6 @@
+.hello {
+    color: red;
+    height: 800px;
+    background: url('../images/bg.jpg') no-repeat;
+    background-size: 1920px 800px;
+}
