@@ -5,10 +5,30 @@
  npm install --save bootstrap@3.3.7
 ```
 
-1. 引入`react-bootstrap 0.32.1` ， 目前仅支持 bootstrap 3
+2. 引入`react-bootstrap 0.32.1` ， 目前仅支持 bootstrap 3
 ```
  npm install --save react-bootstrap
 ```
+
+3. 验证以下 bootstrap功能
+
+    - Alert
+    - Button
+    - Grid, Row, Col
+
+4. 验证以下 react 功能
+
+    - 引入自定义 css 文件
+    - 引入bootstrap node 模块的 css 文件
+    - 引入自定义组件 HelloWorld,AlertDismissable
+    - 事件处理 App.js, AlertDismissable
+    - 引入图片 App.js
+
+5. 验证以下 css 功能
+    -  [flex](http://www.runoob.com/w3cnote/flex-grammar.html)
+
+
+
 
 # 2018-03-26
 
