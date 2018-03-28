@@ -21,8 +21,8 @@
     - 引入自定义 css 文件
     - 引入bootstrap node 模块的 css 文件
     - 引入自定义组件 HelloWorld,AlertDismissable
-    - 事件处理 App.js, AlertDismissable
-    - 引入图片 App.js
+    - 事件处理 BootstrapPlaygroundApp.js, AlertDismissable
+    - 引入图片 BootstrapPlaygroundApp.js
 
 5. 验证以下 css 功能
     -  [flex](http://www.runoob.com/w3cnote/flex-grammar.html)

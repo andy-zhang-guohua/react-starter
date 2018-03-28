@@ -7,6 +7,11 @@ html, body {
 
 .headerRow {
     height: 140px;
+
+    border: 1px;
+    border-style: solid;
+    border-color: #ff0000;
+    margin-bottom: 10px;
 }
 
 .headerCol {
@@ -15,10 +20,26 @@ html, body {
     bottom: 0px;
 }
 
+.contentRow {
+    border: 1px;
+    border-style: solid;
+    border-color: #0000ff;
+    margin-bottom: 10px;
+    padding: 2px;
+}
+
 .pageTitleContainer {
     display: flex;
     display: -webkit-flex; /* Safari */
     height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.carouselItemContentContainer {
+    display: flex;
+    display: -webkit-flex; /* Safari */
+    height: 500px;
     justify-content: center;
     align-items: center;
 }
