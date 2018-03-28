@@ -2,7 +2,8 @@ html, body {
     padding: 0;
     margin: 0;
     height: 100%;
-    overflow: hidden;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .headerRow {
@@ -56,10 +57,5 @@ html, body {
 }
 
 .mainContainer {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0px;
-    bottom: 0px;
     background: #d1d1d1 url('../images/bg.jpg') repeat;
 }
