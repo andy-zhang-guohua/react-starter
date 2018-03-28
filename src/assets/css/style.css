@@ -1,6 +1,30 @@
-.hello {
-    color: red;
-    height: 800px;
-    background: url('../images/bg.jpg') no-repeat;
-    background-size: 1920px 800px;
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.pageTitleContainer {
+    display: flex;
+}
+
+.pageTitle {
+    margin: 10px;
+}
+
+.logo {
+    border-radius: 8px;
+    margin: 10px;
+    width: 120px;
+    height: 120px;
+}
+
+.mainContainer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    background: #d1d1d1 url('../images/bg.jpg') repeat;
 }

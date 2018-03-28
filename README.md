@@ -1,3 +1,15 @@
+# 2018-03-28
+1. 引入 `bootstrap 3`
+
+```
+ npm install --save bootstrap@3.3.7
+```
+
+1. 引入`react-bootstrap 0.32.1` ， 目前仅支持 bootstrap 3
+```
+ npm install --save react-bootstrap
+```
+
 # 2018-03-26
 
 1. 重新组织目录结构 :

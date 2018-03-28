@@ -4,3 +4,10 @@ package-lock.json
 .idea/*
 dist/*.js
 dist/*.jpg
+dist/*.svg
+dist/*.ttf
+dist/*.png
+dist/*.gif
+dist/*.woff
+dist/*.woff2
+dist/*.eot
