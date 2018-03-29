@@ -24,6 +24,12 @@ const config = {
         // 浏览器应用有关文件根目录,如果不指定,则会默认到当前项目根目录
         compress: true, // 启动gzip压缩
     },
+    optimization: {
+        splitChunks: {
+            name: 'vendor',
+            chunks: 'initial',
+        }
+    },
     module: {
         rules: [
             {
