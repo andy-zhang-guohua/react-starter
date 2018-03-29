@@ -18,11 +18,13 @@
     - Carousel
     - Grid, Row, Col
     - Jumbotron
+    - Label
     - Modal
     - Image
     - Overlays,OverlayTrigger
-    - Popover
-    - Tooltip
+    - Popover (底层下拉滚动一段距离，Modal 中的 Popover 位置有问题)
+    - Tabs,Tab
+    - Tooltip (底层下拉滚动一段距离，Modal 中的 Tooltip 位置有问题)
 
 4. 验证以下 react 功能
 

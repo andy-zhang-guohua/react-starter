@@ -23,46 +23,44 @@ class ModalExample extends React.Component {
 
     render() {
         const popover = (
-            <Popover id="modal-popover" title="popover">
-                very popover. such engagement
+            <Popover id="modal-popover" title="弹出框">
+                这里向你演示一个弹出框
             </Popover>
         );
-        const tooltip = <Tooltip id="modal-tooltip">wow.</Tooltip>;
+        const tooltip = <Tooltip id="modal-tooltip">这是个工具提示</Tooltip>;
 
         return (
             <div>
                 <p>Click to get the full Modal experience!</p>
 
                 <Button bsStyle="primary" bsSize="large" onClick={this.handleShow}>
-                    Launch demo modal
+                    演示模态对话框
                 </Button>
 
                 <Modal show={this.state.show} onHide={this.handleClose}>
                     <Modal.Header closeButton>
-                        <Modal.Title>Modal heading</Modal.Title>
+                        <Modal.Title>模态对话框标题</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <h4>Text in a modal</h4>
+                        <h1>模态对话框中的文本</h1>
                         <p>
                             Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
                         </p>
 
-                        <h4>Popover in a modal</h4>
+                        <h4>模态对话框中的弹出框</h4>
                         <p>
-                            there is a{' '}
+                            这里是一个{' '}
                             <OverlayTrigger overlay={popover}>
-                                <a href="#popover">popover</a>
+                                <a href="#popover">弹出框</a>
                             </OverlayTrigger>{' '}
-                            here
                         </p>
 
-                        <h4>Tooltips in a modal</h4>
+                        <h4>模态对话框中的工具提示</h4>
                         <p>
-                            there is a{' '}
+                            这里是一个{' '}
                             <OverlayTrigger overlay={tooltip}>
-                                <a href="#tooltip">tooltip</a>
+                                <a href="#tooltip">工具提示</a>
                             </OverlayTrigger>{' '}
-                            here
                         </p>
 
                         <hr/>
@@ -113,9 +111,34 @@ class ModalExample extends React.Component {
                             cursus magna, vel scelerisque nisl consectetur et. Donec sed odio
                             dui. Donec ullamcorper nulla non metus auctor fringilla.
                         </p>
+                        <p>
+                            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
+                            cursus magna, vel scelerisque nisl consectetur et. Donec sed odio
+                            dui. Donec ullamcorper nulla non metus auctor fringilla.
+                        </p>
+                        <p>
+                            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
+                            cursus magna, vel scelerisque nisl consectetur et. Donec sed odio
+                            dui. Donec ullamcorper nulla non metus auctor fringilla.
+                        </p>
+                        <p>
+                            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
+                            cursus magna, vel scelerisque nisl consectetur et. Donec sed odio
+                            dui. Donec ullamcorper nulla non metus auctor fringilla.
+                        </p>
+                        <p>
+                            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
+                            cursus magna, vel scelerisque nisl consectetur et. Donec sed odio
+                            dui. Donec ullamcorper nulla non metus auctor fringilla.
+                        </p>
+                        <p>
+                            Aenean lacinia bibendum nulla sed consectetur. Praesent commodo
+                            cursus magna, vel scelerisque nisl consectetur et. Donec sed odio
+                            dui. Donec ullamcorper nulla non metus auctor fringilla.
+                        </p>
                     </Modal.Body>
                     <Modal.Footer>
-                        <Button onClick={this.handleClose}>Close</Button>
+                        <Button onClick={this.handleClose}>关闭</Button>
                     </Modal.Footer>
                 </Modal>
             </div>
