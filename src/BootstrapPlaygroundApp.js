@@ -6,10 +6,11 @@ import log from './log.js';
 import logo from './assets/images/logo.png';
 import carousel from './assets/images/carousel.png';
 import thumbnail from './assets/images/thumbnail.png';
-import {Alert, Badge, Button, Col, Grid, Row, Carousel, Image, Jumbotron} from 'react-bootstrap';
+import {Alert, Badge, Button, Carousel, Col, Grid, Image, Jumbotron, Row} from 'react-bootstrap';
 import HelloWorld from './components/HelloWorld';
 import AlertDismissable from './components/AlertDismissable';
 import OverlaysExample from './components/OverlaysExample';
+import ModalExample from "./components/ModalExample";
 
 class App extends React.Component {
     constructor(props, context) {
@@ -65,6 +66,9 @@ class App extends React.Component {
                 <p>
                     Badges <Badge>42</Badge>
                 </p>
+            </Row>
+            <Row className={"contentRow"}>
+                <ModalExample/>
             </Row>
             <Row className={"contentRow"}>
                 <Carousel>
@@ -125,10 +129,11 @@ class App extends React.Component {
                         extra attention to featured content or information.
                     </p>
                     <p>
-                        <OverlaysExample />
+                        <OverlaysExample/>
                     </p>
                 </Jumbotron>
             </Row>
+
         </Grid>;
     }
 }

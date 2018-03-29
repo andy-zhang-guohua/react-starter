@@ -13,8 +13,16 @@
 3. 验证以下 bootstrap功能
 
     - Alert
+    - Badge
     - Button
+    - Carousel
     - Grid, Row, Col
+    - Jumbotron
+    - Modal
+    - Image
+    - Overlays,OverlayTrigger
+    - Popover
+    - Tooltip
 
 4. 验证以下 react 功能
 
