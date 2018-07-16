@@ -1,5 +1,7 @@
 const path = require('path');
 const config = {
+    devtool: "source-map", // 调试模式可以使用该模式
+    //devtool: "none", // 生产环境打包要使用此模式	
     entry: {
         main: './src/main.js',
     },
